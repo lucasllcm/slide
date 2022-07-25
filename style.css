@@ -28,7 +28,7 @@ body {
 .bar {
   width: 70px;
   height: 17px;
-  border: 2px solid rgb(10, 13, 207);
+  border: 2px solid rgb(111, 114, 194);
   margin: 6px;
   border-radius: 5px;
   cursor: pointer;
@@ -36,7 +36,7 @@ body {
 }
 
 .bar:hover {
-  background-color: rgb(23, 26, 184);
+  background-color: rgb(78, 80, 151);
 }
 
 input {
@@ -45,11 +45,11 @@ input {
 
 .slides {
   display: flex;
-  width: 600%;
+  width: 700%;
   height: 100%;
 }
 .slide {
-  width: 16.66%;
+  width: 14.28%;
   transition: .6s;
 }
 
@@ -63,21 +63,104 @@ input {
 }
 
 #slide2:checked ~ .s1 {
-  margin-left: -16.66%;
+  margin-left: -14.28%;
 }
 
 #slide3:checked ~ .s1 {
-  margin-left: -33.32%;
+  margin-left: -28.56%;
 }
 
 #slide4:checked ~ .s1 {
-  margin-left: -49.98%;
+  margin-left: -42.84%;
 }
 
 #slide5:checked ~ .s1 {
-  margin-left: -66.64%;
+  margin-left: -57.12%;
 }
 
 #slide6:checked ~ .s1 {
-  margin-left: -83.30%;
+  margin-left: -71.40%;
+}
+
+#slide7:checked ~ .s1 {
+  margin-left: -85.68%;
+}
+
+@media(max-width: 1000px) {
+  .content{
+    width: 800px;
+  }
+}
+
+@media(max-width: 800px) {
+  .content{
+    width: 600px;
+    transform: translate(-25%, -25%);
+  }
+  .bar {
+    width: 30px;
+    height: 17px;
+    border: 2px solid rgb(10, 13, 207);
+    margin: 6px;
+    border-radius: 5px;
+  }
+  .slide img {
+    width: 75%;
+    height: 75%;
+  }
+  .navigation {
+    position: absolute;
+    bottom: 130px;
+    left: 25%;
+    transform: translate(-25%);
+    display: flex;
+}
+}
+
+@media(max-width: 600px) {
+  .content{
+    width: 400px;
+  }
+  .bar {
+    width: 10px;
+    height: 17px;
+    border: 2px solid rgb(140, 142, 241);
+    margin: 6px;
+    border-radius: 5px;
+  }
+  .slide img {
+    width: 75%;
+    height: 25%;
+  }
+  .navigation {
+    position: absolute;
+    bottom: 400px;
+    left: 5%;
+    transform: translate(-5%);
+    display: flex;
+}
+}
+
+@media(max-width: 400px) {
+  .content{
+    width: 200px;
+  }
+  .bar {
+    width: 5px;
+    height: 17px;
+    border: 2px solid rgb(10, 13, 207);
+    margin: 6px;
+    border-radius: 5px;
+  }
+  .slide img {
+    width: 75%;
+    height: 25%;
+  }
+  .navigation {
+    position: absolute;
+    bottom: 400px;
+    left: 5%;
+    transform: translate(-5%);
+    display: flex;
+}
 }
