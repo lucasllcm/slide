@@ -3,7 +3,7 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(72deg, #568fda 1%, #00002e 99%);
+  background: linear-gradient(72deg, #b30604 1%, #e0670b 99%);
 }
 
 .content {
@@ -28,7 +28,7 @@ body {
 .bar {
   width: 70px;
   height: 17px;
-  border: 2px solid rgb(111, 114, 194);
+  border: 2px solid rgb(148, 25, 7);
   margin: 6px;
   border-radius: 5px;
   cursor: pointer;
@@ -36,7 +36,7 @@ body {
 }
 
 .bar:hover {
-  background-color: rgb(78, 80, 151);
+  background-color: rgb(124, 20, 4);
 }
 
 input {
